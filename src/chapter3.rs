@@ -1,4 +1,4 @@
-(1)
+// (1)
 fn main() {
     let x: i32 = 5; // Uninitialized but used, ERROR !
     let _y: i32; // Uninitialized but also unused, only a Warning !
@@ -6,7 +6,7 @@ fn main() {
     assert_eq!(x, 5);
     println!("Success!");
 }
-(2)
+//(2)
 fn main() {
     let  mut x = 1;
     x += 2;
@@ -14,7 +14,7 @@ fn main() {
     assert_eq!(x, 3);
     println!("Success!");
 }
-(3)
+//(3)
 fn main() {
     let x: i32 = 10;
     let y: i32 = 5;
@@ -23,7 +23,7 @@ fn main() {
     }
     println!("The value of x is {} and value of y is {}", x, y);
 }
-(4)
+//(4)
 fn main() {
     define_x();
 }
@@ -32,7 +32,7 @@ fn define_x() {
     let x = "hello";
     println!("{}, world", x);
 }
-(5)
+//(5)
 fn main() {
     let x: i32 = 5;
     {
@@ -45,7 +45,7 @@ fn main() {
     let x = 42;
     println!("{}", x); // Prints "42".
 }
-(6)
+//(6)
 fn main() {
     let mut _x: i32 = 1;
     _x = 7;
@@ -59,12 +59,12 @@ fn main() {
 
     println!("Success!");
 }
-(7)
+//(7)
 fn main() {
     let x = 1;
     println!("{}", x);
 }
-(8)
+//(8)
 fn main() {
     let (mut x, y) = (1, 2);
     x += 2;
@@ -74,7 +74,7 @@ fn main() {
 
     println!("Success!");
 }
-(9)
+//(9)
 fn main() {
     let (x, y);
     (x,..) = (3, 4);
